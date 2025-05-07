@@ -19,15 +19,8 @@ const NavBar = async () => {
               <Link href="/startup/create">
                 <span>Create</span>
               </Link>
-              <form
-                action={async () => {
-                  "use server";
-                  await signOut({ redirectTo: "/" });
-                }}
-              >
-                <button type="submit">
-                  <span>Sign out</span>
-                </button>
+              <form async () => {await onClick = { signOut } >}
+                <span>Sign out</span>
               </form>
 
               <Link href={`/user/${session?.id}`}>
@@ -36,7 +29,7 @@ const NavBar = async () => {
             </>
           ) : (
             <form
-              action={async () => {
+              onClick={async () => {
                 "use server";
 
                 await signIn("github");
