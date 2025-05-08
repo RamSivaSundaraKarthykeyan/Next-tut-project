@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -10,7 +7,7 @@
 
 @layer utilities
   { .heading {
-         @apply uppercase bg-black px-6 py-3 font-extrabold font-work-sans text-white sm: text [-54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+         @apply uppercase bg-black px-6 py-3 font-extrabold 
     }
   }
 
